@@ -17,3 +17,10 @@
 
 // 9. When the player loses, increase the Losses counter and restart the game without a page refresh 
 // (just like when the user wins). -->
+
+let wins = 0;
+let losses = 0;
+let guessesLeft = 0;
+let yourGuessesSoFar = 0;
+
+
