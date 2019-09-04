@@ -23,4 +23,13 @@ let losses = 0;
 let guessesLeft = 0;
 let yourGuessesSoFar = 0;
 
+// computer's choice function
+function computersChoice () {
+
+}
+
+// user's choice function
+
+// score updating function
+
 
