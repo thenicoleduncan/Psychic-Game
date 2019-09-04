@@ -3,17 +3,17 @@
 }
 
 .wins {
-
+background-color: lightgreen;
 }
 
 .losses {
-
+background-color: lightsalmon;
 }
 
 .guessesLeft {
-
+background-color: lightcyan;
 }
 
 .yourGuessesSoFar {
-    
+background-color: lightseagreen;
 }
