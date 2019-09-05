@@ -18,30 +18,8 @@
 // 9. When the player loses, increase the Losses counter and restart the game without a page refresh 
 // (just like when the user wins). -->
 
-let wins = 0;
-let losses = 0;
-let guessesLeft = 0;
-let yourGuessesSoFar = 0;
 
-// computer's choice function
-function computersChoice () {
+let computersChoice = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
 
-}
-
-// user's choice function
-function usersChoice () {
-    if () {
-
-    }
-    else () {
-        
-    }
-
-}
-
-// score updating function
-function scoreUpdater () {
-
-}
 
 
