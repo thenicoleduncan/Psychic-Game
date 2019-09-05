@@ -1,22 +1,29 @@
 #container {
-    text-align: center;
-}
-.display-4 {
-    font-family: 'Modak', cursive;
+text-align: center;
 }
 
-.wins {
+#display-4 {
+font-family: 'Modak', cursive;
 background-color: lightgreen;
 }
 
-.losses {
+#wins-text {
+background-color: lightgreen;
+}
+
+#losses-text {
 background-color: lightsalmon;
 }
 
-.guessesLeft {
+#guessesLeft-text {
 background-color: lightcyan;
 }
 
-.yourGuessesSoFar {
+#yourGuessesSoFar-text {
+background-color: lightseagreen;
+}
+
+#display-5 {
+font-family: 'Modak', cursive;
 background-color: lightseagreen;
 }
