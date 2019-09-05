@@ -29,7 +29,13 @@ function computersChoice () {
 }
 
 // user's choice function
+function usersChoice () {
+
+}
 
 // score updating function
+function scoreUpdater () {
+    
+}
 
 
