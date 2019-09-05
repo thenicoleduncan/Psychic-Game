@@ -36,27 +36,24 @@ var yourGuessesSoFarText = document.getElementById("yourGuessesSoFar-text");
     // this function is run whenever the user presses a key
     document.onkeyup = function(event) {
 
-        // Determines which key was pressed.
+        // determines the users guess by pressing any key
         let userGuess = event.key;
   
-        // Randomly chooses a choice from the options array. This is the Computer's guess.
+        // determines what the computers guess will be at random
         let computerGuess = computersChoice[Math.floor(Math.random() * computersChoice.length)];
   
-        // This logic determines the outcome of the game (win/loss/tie), and increments the appropriate number
-        if ((userGuess === "r") || (userGuess === "p") || (userGuess === "s")) {
-  
-          if ((userGuess === "r" && computerGuess === "s") ||
-            (userGuess === "s" && computerGuess === "p") || 
-            (userGuess === "p" && computerGuess === "r")) {
+        // this increments the appropriate numbers
+        if (userGuess === computerGuess) {
             wins++;
-          } else if (userGuess === computerGuess) {
-            ties++;
-          } else {
+        } else {
             losses++;
-          }
-  
-          // Hide the directions
-          directionsText.textContent = "";
+        }
+
+        if (userGuess === computerGuess) {
+            yourGuessesSoFar++;
+        } else {
+            guessesLeft++;
+        }
   
           // Display the user and computer guesses, and wins/losses/ties.
           userChoiceText.textContent = "You chose: " + userGuess;
