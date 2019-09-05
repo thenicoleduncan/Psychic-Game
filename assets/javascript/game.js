@@ -18,8 +18,15 @@
 // 9. When the player loses, increase the Losses counter and restart the game without a page refresh 
 // (just like when the user wins). -->
 
-
+// array for the computer's choices
 let computersChoice = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
+
+// creating variables that will store the information that the user inputs
+let wins = 0;
+let losses = 0;
+let guessesLeft = 0;
+let yourGuessesSoFar = 0;
+
 
 
 
