@@ -1,6 +1,9 @@
 #container {
     text-align: center;
 }
+.display-4 {
+    font-family: 'Modak', cursive;
+}
 
 .wins {
 background-color: lightgreen;

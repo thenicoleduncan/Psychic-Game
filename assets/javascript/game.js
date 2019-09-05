@@ -30,12 +30,18 @@ function computersChoice () {
 
 // user's choice function
 function usersChoice () {
+    if () {
+
+    }
+    else () {
+        
+    }
 
 }
 
 // score updating function
 function scoreUpdater () {
-    
+
 }
 
 
