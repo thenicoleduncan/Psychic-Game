@@ -45,24 +45,20 @@ var yourGuessesSoFarText = document.getElementById("yourGuessesSoFar-text");
         // this increments the appropriate numbers
         if (userGuess === computerGuess) {
             wins++;
-        } else {
-            losses++;
-        }
-
-        if (userGuess === computerGuess) {
             yourGuessesSoFar++;
         } else {
+            losses++;
             guessesLeft++;
         }
-  
+
           // Display the user and computer guesses, and wins/losses/ties.
           userChoiceText.textContent = "You chose: " + userGuess;
           computerChoiceText.textContent = "The computer chose: " + computerGuess;
           winsText.textContent = "wins: " + wins;
           lossesText.textContent = "losses: " + losses;
           tiesText.textContent = "ties: " + ties;
-        }
-      };
+    };
+
 
 
 
