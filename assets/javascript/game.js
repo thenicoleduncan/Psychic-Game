@@ -7,7 +7,7 @@ let computersChoice = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l
 // creating variables that will store the information that the user inputs
 let wins = 0;
 let losses = 0;
-let guessesLeft = 0;
+let guessesLeft = 9;
 let yourGuessesSoFar = 0;
 
 // creating variables that hold references to the places in the HTML where i want to display things on the browser
@@ -36,8 +36,15 @@ var yourGuessesSoFarText = document.getElementById("yourGuessesSoFar-text");
             yourGuessesSoFar++;
         } else {
             losses++;
-            guessesLeft++;
+            guessesLeft--;
             yourGuessesSoFar++;
+        }
+
+        if (guessesLeft === 0) {
+            wins = 0;
+            losses = 0;
+            guessesLeft = 9;
+            yourGuessesSoFar = 0;
         }
 
           // display the user and computer guesses, and wins/losses/guesses left/your guesses so far
@@ -46,8 +53,7 @@ var yourGuessesSoFarText = document.getElementById("yourGuessesSoFar-text");
           guessesLeftText.textContent = ("guesses left: " + guessesLeft);
           yourGuessesSoFarText.textContent = ("your guesses so far: " + yourGuessesSoFar);
     };
-
-
+    
 
 
 
